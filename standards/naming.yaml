@@ -1,0 +1,20 @@
+# How things are named. Each pattern is a regular expression the whole name
+# must match. Not held against a model yet -- the model checks are not written
+# -- but read and checked for being valid patterns, so they are ready.
+#
+# status: example -- the right shape, not this office's conventions.
+status: example
+
+patterns:
+  zone_number:
+    pattern: "[A-Z]?\\d{1,2}\\.\\d{2}"
+    note: storey, a point, the unit on it -- 3.07, or B1.02 in a basement
+  wall_id:
+    pattern: "W-\\d{3}"
+  door_id:
+    pattern: "D-\\d{3}"
+  window_id:
+    pattern: "WN-\\d{3}"
+  layout_id:
+    pattern: "A\\d{3}"
+    note: A100 plans, A200 elevations, A300 sections

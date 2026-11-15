@@ -1,0 +1,29 @@
+# Layers and layer combinations the template must have, and so the only ones
+# a spec may name.
+#
+# An entry is a name, or a name with a note beside it. Names are matched
+# exactly as Archicad spells them: one more space is another layer.
+#
+# status: example -- the right shape, not this office's names. Replace them,
+# then set `draft`, and `agreed` once they are.
+status: example
+
+layers:
+  - name: "Structure - Slab"
+    note: floor slabs and footings
+  - name: "Structure - Column"
+  - name: "Wall - External"
+  - name: "Wall - Internal"
+  - name: "Opening - Door"
+  - name: "Opening - Window"
+  - name: "Zone - Room"
+    note: one zone for every room, numbered as naming.yaml says
+  - name: "Site - Boundary"
+
+layer_combinations:
+  - name: "01 Model"
+    note: everything a person models in
+  - name: "02 Plans"
+  - name: "03 Sections and Elevations"
+  - name: "04 Areas"
+    note: zones on, furniture off -- what the area schedule is read from
