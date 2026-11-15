@@ -1,0 +1,39 @@
+# Attributes the template must have.
+#
+# A building material's `priority` is its intersection priority, 0 to 999, as
+# the Building Materials dialog shows it: where two meet, the higher one cuts
+# the lower. Give it where the standard fixes it and the audit holds the
+# template to the number; leave it out and only the name is checked.
+#
+# status: example -- the right shape, not this office's names.
+status: example
+
+building_materials:
+  - name: "Concrete - Structural"
+    priority: 800
+  - name: "Masonry - Block"
+    priority: 600
+  - name: "Insulation - Mineral"
+    priority: 300
+  - name: "Plasterboard"
+    priority: 200
+  - name: "Air Space"
+    priority: 100
+
+composites:
+  - name: "External Wall - Block 300"
+  - name: "Internal Wall - Stud 100"
+  - name: "Floor - Concrete 250"
+
+profiles: []
+
+surfaces: []
+
+pen_sets:
+  - name: "01 Documentation"
+  - name: "02 Presentation"
+
+zone_categories:
+  - name: "Residential"
+  - name: "Circulation"
+  - name: "Services"

@@ -1,0 +1,20 @@
+# What the drawings are made with: the graphic override combinations and the
+# publisher sets the template must have.
+#
+# A publisher set that prints the plans to PDF and to PNG is how an agent
+# looks at what it built, so the template needs one.
+#
+# Not audited yet, so not listed here: master layouts, model view options,
+# the view map's folders and the classification system. See docs/archicad.md.
+#
+# status: example -- the right shape, not this office's names.
+status: example
+
+graphic_overrides:
+  - name: "Plans"
+  - name: "Areas by Unit Type"
+
+publisher_sets:
+  - name: "QA - Plans PNG"
+    note: every storey's plan as a picture, for the visual check
+  - name: "Issue - PDF"

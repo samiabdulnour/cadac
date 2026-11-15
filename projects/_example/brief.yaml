@@ -1,0 +1,43 @@
+# A brief: what was asked for, written so it can be checked. Copy this folder
+# to projects/<name>/ and fill it from what the person gave you.
+#
+# Lengths are metres and areas square metres. A number nobody gave is not
+# guessed: it goes under open_questions, and the brief is not ready until that
+# list is empty and a person has approved it.
+
+project:
+  name: "Example House of Flats"
+  number: "0000"
+
+site:
+  address: "1 Example Street, Exampleville"
+  area_m2: 1200
+  # Where project north points, in degrees clockwise from the top of the page.
+  north_deg: 0
+
+# The planning controls and anything else the building must stay inside, as
+# the brief words them. A person checks these; the tool only carries them.
+controls:
+  height_limit_m: 20
+  floor_space_ratio: 2.0
+  setbacks_m: { front: 6, side: 3, rear: 6 }
+
+building:
+  use: residential
+  storeys_above_ground: 5
+  basements: 1
+  floor_to_floor_m: { ground: 3.6, typical: 3.1, basement: 3.0 }
+  structure: { grid_m: [8.4, 8.4], slab_mm: 250 }
+
+# What the building has to hold. `type` is the office's word for it and is
+# what a zone's Unit Type will say; `area_m2` is for one of them.
+programme:
+  - { type: "1B", count: 8, area_m2: 52 }
+  - { type: "2B", count: 14, area_m2: 78 }
+  - { type: "3B", count: 4, area_m2: 102 }
+
+open_questions:
+  - "Is the ground floor residential or retail? The brief says both."
+
+# Filled by the person who approves it, not by the agent.
+approved: {}

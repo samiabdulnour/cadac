@@ -1,0 +1,16 @@
+# Property groups and the properties in them that the template must define.
+# Archicad's own properties are in every project and are not listed.
+#
+# status: example -- the right shape, not this office's names.
+status: example
+
+property_groups:
+  - name: "Unit"
+    properties:
+      - name: "Unit Number"
+      - name: "Unit Type"
+        note: as the brief's programme names it -- 1B, 2B, ...
+  - name: "Model QA"
+    properties:
+      - name: "Placed From Spec"
+        note: the spec row an element was built from, written by the builder

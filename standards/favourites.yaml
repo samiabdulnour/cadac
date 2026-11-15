@@ -1,0 +1,49 @@
+# The favourites a spec may place. This is the whole of what an agent can
+# build with: every element it places is one of these, by name, and takes its
+# layer, building material, pens and properties from the favourite. An element
+# that needs a style not listed here is a question for a person, not a new
+# style.
+#
+# `element` is the tool the favourite belongs to, spelled as the add-on spells
+# it: Wall, Column, Beam, Window, Door, Object, Lamp, Slab, Roof, Mesh, Zone,
+# Hatch (the Fill tool), Line, PolyLine, Text, Label, Dimension, Stair,
+# Railing, Morph, Shell, Skylight, Opening, CurtainWall.
+# `use` says when a spec picks it.
+#
+# status: example -- the right shape, not this office's names.
+status: example
+
+favourites:
+  - name: "Slab - Floor 250"
+    element: Slab
+    use: every floor above ground
+  - name: "Slab - Basement 300"
+    element: Slab
+    use: basement floors
+  - name: "Column - Concrete 400"
+    element: Column
+    use: the structural grid
+  - name: "Wall - External 300"
+    element: Wall
+    use: the building's outside walls
+  - name: "Wall - Internal 100"
+    element: Wall
+    use: walls between rooms of one unit
+  - name: "Wall - Party 250"
+    element: Wall
+    use: walls between two units, and between a unit and the corridor
+  - name: "Door - Entry 920"
+    element: Door
+    use: a unit's front door
+  - name: "Door - Internal 820"
+    element: Door
+    use: doors inside a unit
+  - name: "Window - Living 2400"
+    element: Window
+    use: living rooms
+  - name: "Window - Bedroom 1500"
+    element: Window
+    use: bedrooms
+  - name: "Zone - Room"
+    element: Zone
+    use: every room
