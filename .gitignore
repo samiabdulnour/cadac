@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# A project's working model and what it publishes are made, not written:
+# the model is a copy of the template that the builder fills, saved again at
+# every stage, and the outputs are printed from it. The brief, the spec and
+# the reports beside them are what is kept.
+projects/*/model/
+projects/*/out/
+
+# Archicad's own leftovers beside an open file
+*.lck
+*.bak
+
+# Editors and systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

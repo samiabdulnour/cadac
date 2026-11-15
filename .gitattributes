@@ -1,0 +1,12 @@
+# Archicad's own files are binary. Git LFS keeps each version as one object
+# outside the history, so the repository stays small and clones stay quick.
+# Run `git lfs install` once on a machine before adding or pulling these.
+*.tpl filter=lfs diff=lfs merge=lfs -text
+*.pln filter=lfs diff=lfs merge=lfs -text
+*.pla filter=lfs diff=lfs merge=lfs -text
+*.bpn filter=lfs diff=lfs merge=lfs -text
+*.mod filter=lfs diff=lfs merge=lfs -text
+*.lcf filter=lfs diff=lfs merge=lfs -text
+*.gsm filter=lfs diff=lfs merge=lfs -text
+*.aat filter=lfs diff=lfs merge=lfs -text
+*.prf filter=lfs diff=lfs merge=lfs -text
